@@ -1,3 +1,4 @@
 oscript_modules/
 
 tests\.xml
+*.ospx
