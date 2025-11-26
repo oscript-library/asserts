@@ -7,6 +7,14 @@ on:
 
 jobs:
   test:
+    strategy:
+      matrix:
+        oscript_version: ['default', 'lts-dev', 'dev']
+        test_engine: ['1testrunner']
+        include:
+          - oscript_version: 'dev'
+            test_engine: 'oneunit'
     uses: autumn-library/workflows/.github/workflows/test.yml@main
     with:
-      oscript_version: stable
+      oscript_version: ${{ matrix.oscript_version }}
+      test_engine: ${{ matrix.test_engine }}
