@@ -1,5 +1,7 @@
 # Утверждения
 
+[![Used by](https://litrosbadges.ru/package/asserts.svg)](https://litrosbadges.ru/package/asserts)
+
 Добавляет в скрипт функционал "Утверждений" (assertions). Возможны 2 стиля использования:
 
 * **Модуль "Утверждения"** - утверждения в стиле фреймворка xUnitFor1C
